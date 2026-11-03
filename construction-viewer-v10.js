@@ -1,1 +1,1 @@
-import './construction-viewer-v14.js';
+location.replace(new URL('./construction-viewer-v15.html',import.meta.url).href);
