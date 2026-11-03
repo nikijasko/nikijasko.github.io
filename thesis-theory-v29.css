@@ -1,0 +1,43 @@
+.thesis-page .thesis-heading{margin:30px 0 0;align-items:baseline}
+.thesis-page .thesis-heading h1{font-size:19px;line-height:1.5;font-weight:500}
+.thesis-epigraph{max-width:900px;margin:32px 0}
+.thesis-epigraph blockquote{margin:0}
+.thesis-epigraph blockquote p{font-size:30px;line-height:1.4;font-weight:400;letter-spacing:0;margin:0}
+.thesis-epigraph figcaption{font-size:10px;color:#777;line-height:1.8;margin-top:16px}
+.thesis-epigraph cite{font-style:normal}
+.thesis-overview{max-width:800px;margin:0 0 34px}
+.thesis-overview p{font-size:13px;line-height:1.8;margin:0 0 16px}
+.thesis-overview .thesis-question{font-size:17px;line-height:1.65}
+.thesis-overview .thesis-credits-line{font-size:11px;color:#777;line-height:1.8}
+.thesis-overview .thesis-download{font-size:12px;margin-bottom:0}
+.thesis-download a{text-decoration:underline;text-underline-offset:4px}
+.thesis-page .thesis-nav{position:static;display:flex;gap:10px 26px;flex-wrap:wrap;font-size:11px;line-height:1.6;padding:0;margin:0 0 4px}
+.thesis-nav a{color:#777}
+.thesis-nav a:hover,.thesis-nav a:focus-visible{color:#222;text-decoration:underline;text-underline-offset:4px}
+.thesis-chapter{padding-top:40px;scroll-margin-top:18px}
+.thesis-chapter h2{font-size:18px;line-height:1.5;font-weight:500;letter-spacing:0;margin:0 0 24px}
+.thesis-theory{max-width:800px}
+.thesis-theory h3{font-size:15px;line-height:1.6;font-weight:500;margin:28px 0 12px}
+.thesis-theory p{font-size:13px;line-height:1.85;margin:0 0 17px}
+.thesis-theory .thesis-figure{width:100%;margin:26px 0 30px}
+.thesis-theory .thesis-figure img{display:block;width:100%;height:auto;max-height:none}
+.thesis-figure figcaption{font-size:10px;color:#888;line-height:1.7;margin-top:10px}
+.thesis-theory .thesis-feedback{max-width:520px;margin:26px 0 30px}
+.thesis-page .thesis-chapter:not(.thesis-theory){margin-top:36px;border-top:1px solid #eee}
+.thesis-page .thesis-chapter>.gallery{gap:48px}
+@media(max-width:650px){
+ .thesis-page .thesis-heading{display:block;margin-top:26px}
+ .thesis-page .thesis-heading h1{font-size:18px;margin-bottom:7px}
+ .thesis-epigraph{margin:27px 0}
+ .thesis-epigraph blockquote p{font-size:24px;line-height:1.4}
+ .thesis-epigraph figcaption{max-width:310px}
+ .thesis-overview .thesis-question{font-size:16px}
+ .thesis-overview p,.thesis-theory p{font-size:12px}
+ .thesis-page .thesis-nav{gap:9px 18px;font-size:10px}
+ .thesis-chapter{padding-top:30px;scroll-margin-top:12px}
+ .thesis-chapter h2{font-size:17px;margin-bottom:20px}
+ .thesis-theory h3{font-size:14px;margin-top:24px}
+ .thesis-theory .thesis-figure,.thesis-theory .thesis-feedback{margin:23px 0 26px}
+ .thesis-page .thesis-chapter:not(.thesis-theory){margin-top:28px}
+ .thesis-page .thesis-chapter>.gallery{gap:34px}
+}
