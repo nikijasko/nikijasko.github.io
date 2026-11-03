@@ -1,0 +1,25 @@
+.thesis-copy{max-width:800px;font-size:13px;line-height:1.85;margin:0 0 28px;color:#444}
+.thesis-copy p{margin:0 0 16px}
+.thesis-pair-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.thesis-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+.thesis-pair figure{min-width:0;margin:0;grid-column:auto}
+.thesis-pair img{display:block;width:100%;height:auto}
+.thesis-pair figcaption{font-size:11px;line-height:1.8;color:#666;margin-top:14px}
+.thesis-pair figcaption strong{display:block;font-size:12px;font-weight:500;color:#333;margin-bottom:7px}
+.thesis-pair-hint{display:none;font-size:10px;color:#888;margin:10px 0 0}
+.thesis-street-study{margin-top:42px;scroll-margin-top:24px}
+.thesis-street-study h3{font-size:15px;line-height:1.6;font-weight:500;margin:0 0 20px}
+.thesis-street-study a{display:block;max-width:1152px}
+.thesis-street-study img{display:block;width:100%;height:auto;max-height:none}
+.thesis-exhibition-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.thesis-exhibition-layout{--exhibition-height:clamp(200px,25vw,280px);display:flex;width:max-content;gap:36px;align-items:flex-start;justify-content:flex-start}
+.thesis-exhibition-layout>a{display:block;flex:0 0 auto;width:auto;align-self:flex-start}
+.thesis-exhibition-layout img{display:block;width:auto;height:var(--exhibition-height);max-width:none;max-height:none;background:transparent;border:0;padding:0}
+@media(max-width:650px){
+ .thesis-copy{font-size:12px}
+ .thesis-pair{grid-template-columns:repeat(2,minmax(270px,1fr));gap:16px}
+ .thesis-pair-hint{display:block}
+ .thesis-pair figcaption{font-size:10px}
+ .thesis-pair figcaption strong{font-size:11px}
+ .thesis-exhibition-layout{gap:16px}
+}
