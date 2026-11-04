@@ -1,0 +1,83 @@
+/* One content width and a shared pair of columns inside every project. */
+#detail{--project-gap:32px;--project-space:64px;max-width:1264px}
+#detail>*{min-width:0}
+#detail .project-heading,#detail .intro{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);column-gap:var(--project-gap);align-items:start}
+#detail .project-heading{margin:32px 0 24px}
+#detail .project-heading h1{margin:0}
+#detail .project-heading>span{font-size:11px;line-height:1.8;text-align:left;padding-top:6px}
+#detail .intro{margin-bottom:48px;row-gap:20px}
+#detail .intro .credits{max-width:none}
+#detail figcaption{font-size:11px;line-height:1.7;margin-top:12px}
+#detail .project-section+.project-section{margin-top:var(--project-space);padding-top:32px}
+#detail .project-section h2,#detail .school-section h2{margin-bottom:24px}
+#detail .project-section .intro{margin-bottom:40px}
+#detail .next{margin-top:var(--project-space);gap:var(--project-gap)}
+
+/* Whole drawings are retained; related sets align at their tops and captions. */
+#detail .project-gallery{display:grid;grid-template-columns:minmax(0,1fr);gap:48px}
+#detail .gallery-row{display:grid;gap:var(--project-gap);align-items:start;min-width:0}
+#detail .gallery-row--1{grid-template-columns:minmax(0,1fr)}
+#detail .gallery-row--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+#detail .gallery-row--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#detail .gallery-row--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+#detail .gallery-row>figure{grid-column:auto;min-width:0;width:100%;max-width:none;margin:0}
+#detail .gallery-media{display:block;width:100%}
+#detail .gallery-media img{display:block;width:100%;height:auto;max-height:900px;object-fit:contain;object-position:left top}
+#detail .gallery-row:not(.gallery-row--1) .gallery-media{aspect-ratio:var(--media-ratio)}
+#detail .gallery-row:not(.gallery-row--1) .gallery-media img{height:100%;max-height:none}
+
+/* The school uses the same widths and gutters as the drawing galleries. */
+#detail .school-renderings{margin-bottom:var(--project-space)}
+#detail .school-render-grid{gap:var(--project-gap);margin-top:var(--project-gap)}
+#detail .school-section{margin:var(--project-space) 0}
+#detail .school-context{width:100%;max-width:none;margin:var(--project-space) 0!important}
+#detail .school-detail-grid{gap:var(--project-gap);margin-top:48px}
+#detail .school-detail-grid img{object-position:left top}
+#detail .school-plan-toolbar{margin-bottom:20px}
+
+/* Preserve the thesis' plain reading column and existing interactive layouts. */
+#detail .thesis-epigraph,#detail .thesis-overview,#detail .thesis-theory,#detail .thesis-copy{max-width:780px}
+#detail .thesis-heading{margin-bottom:0}
+#detail .thesis-feedback{max-width:none}
+#detail .thesis-chapter{padding-top:40px}
+#detail .thesis-chapter:not(.thesis-theory){margin-top:var(--project-space)}
+#detail .thesis-pair{gap:var(--project-gap)}
+#detail .thesis-pair figcaption{margin-top:12px}
+#detail .thesis-street-study{margin-top:48px}
+#detail .thesis-street-study a{max-width:none}
+#detail .thesis-exhibition-layout{gap:var(--project-gap)}
+#detail .case-layout,#detail .masterplan-layout{gap:var(--project-gap)}
+#detail .case-grid{gap:24px}
+#detail .case-heading{min-height:78px}
+#detail .masterplan{margin-top:48px;margin-bottom:0}
+
+@media(max-width:1000px){
+ #detail .gallery-row--4{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #detail .case-heading{min-height:78px}
+}
+@media(max-width:760px){
+ #detail .project-heading,#detail .intro{grid-template-columns:minmax(0,1fr)}
+ #detail .project-heading{row-gap:10px}
+ #detail .project-heading>span{padding-top:0}
+ #detail .intro{row-gap:20px}
+}
+@media(max-width:650px){
+ #detail{--project-gap:20px;--project-space:48px}
+ #detail .project-heading{margin-top:28px;margin-bottom:24px}
+ #detail .intro{margin-bottom:36px}
+ #detail .project-gallery{gap:36px}
+ #detail .gallery-row--2,#detail .gallery-row--3,#detail .gallery-row--4{grid-template-columns:minmax(0,1fr);row-gap:36px}
+ #detail .gallery-row:not(.gallery-row--1) .gallery-media{aspect-ratio:auto}
+ #detail .gallery-row:not(.gallery-row--1) .gallery-media img{height:auto}
+ #detail .gallery-media img{max-height:none}
+ #detail .project-section+.project-section{padding-top:28px}
+ #detail .school-render-grid{gap:16px;margin-top:16px}
+ #detail .school-detail-grid{gap:20px;margin-top:36px}
+ #detail .school-detail-grid figcaption{font-size:10px}
+ #detail .thesis-chapter{padding-top:32px}
+ #detail .thesis-pair{gap:20px}
+ #detail .thesis-pair figcaption{font-size:10px}
+ #detail .thesis-street-study{margin-top:36px}
+ #detail .case-heading{min-height:78px}
+ #detail .masterplan{margin-top:36px}
+}
