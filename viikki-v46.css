@@ -1,0 +1,7 @@
+#detail .viikki-construction{margin:var(--project-space) 0;padding-top:32px;border-top:1px solid #eee}
+#detail .viikki-construction>p{max-width:690px;font-size:13px;line-height:1.85;margin:0 0 24px;color:#444}
+#detail .viikki-model{display:block;width:100%;height:600px;border:1px solid #e6e5e0}
+#detail .viikki-model-note{font-size:11px!important;color:#777!important;margin:12px 0 0!important}
+#detail .viikki-model-note a,.viikki-model-jump{text-decoration:underline;text-underline-offset:4px}
+#detail .viikki-model-jump{font-size:11px;color:#555;justify-self:start}
+@media(max-width:650px){#detail .viikki-construction{padding-top:24px}#detail .viikki-model{height:590px}}
