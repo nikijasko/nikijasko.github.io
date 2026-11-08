@@ -1,0 +1,163 @@
+#detail.housing-page{max-width:1320px;--housing-rule:#e2e3df;--housing-muted:#646761}
+.housing-page .project-heading{margin-bottom:22px}
+.housing-page figure{min-width:0}
+.housing-page figure img{width:100%;max-height:none}
+.housing-page figure a{display:block}
+.housing-page figure figcaption{color:var(--housing-muted);margin-top:7px}
+.housing-page .housing-intro{max-width:760px;font-size:clamp(14px,1.4vw,17px);line-height:1.8;margin:25px 0}
+.housing-page .housing-jumps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));border-block:1px solid var(--housing-rule);max-width:820px;gap:0;padding:0;margin:30px 0 58px}
+.housing-jumps a{display:block;padding:15px 14px 15px 0;font-size:13px;font-weight:500}
+.housing-jumps small{display:block;font-size:11px;margin-top:2px;color:var(--housing-muted);font-weight:400}
+.housing-index,.housing-kicker{font-variant-numeric:tabular-nums;color:var(--housing-muted);font-size:11px}
+.housing-index{margin-right:4px}
+.housing-page .housing-chapter{padding:42px 0 0;border-top:1px solid var(--housing-rule);display:block;scroll-margin-top:22px}
+.housing-chapter h2{font-size:clamp(24px,3vw,34px);font-weight:500;line-height:1.2;margin:3px 0 13px}
+.housing-kicker{margin:0}
+.housing-text{max-width:720px;font-size:13px;line-height:1.85;margin:0 0 17px}
+.housing-section{padding:32px 0 0;margin:0 0 36px;scroll-margin-top:12px}
+.housing-section h3{font-weight:500;font-size:19px;line-height:1.35;margin:0 0 10px}
+.housing-section h4{font-size:14px;margin:0 0 10px;font-weight:600}
+.housing-credit,.housing-note{font-size:11px;color:var(--housing-muted);line-height:1.65}
+.housing-credit{margin:18px 0 55px}
+.housing-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 25px;align-items:start}
+.housing-controls{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:5px 16px;padding:0 0 6px;border-bottom:1px solid var(--housing-rule)}
+.housing-tabs{display:flex;flex:1 1 auto;align-items:center;flex-wrap:wrap;gap:0 19px;min-width:0}
+.housing-page button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.housing-page button:focus-visible{outline:2px solid #5c6b63;outline-offset:3px}
+.housing-page .housing-tabs button{padding:7px 0 6px;border-bottom:1px solid transparent;color:var(--housing-muted);font-size:12px;text-align:left}
+.housing-page .housing-tabs button:hover,.housing-page .housing-tabs button[aria-pressed="true"]{border-color:#292f29;color:#252525}
+.housing-page .housing-enlarge{font-size:11px;color:var(--housing-muted);white-space:nowrap;padding:4px 0}
+.housing-note{margin:10px 0 12px}
+.housing-drawing{min-width:0}
+.housing-drawing img{display:block;width:100%;height:auto;object-fit:contain;object-position:left center;max-height:640px}
+[data-gallery="concepts"] .housing-drawing img{max-height:335px}
+[data-gallery="axos"] .housing-drawing img{max-height:545px}
+[data-gallery="details"] .housing-drawing img,[data-gallery="strPlans"] .housing-drawing img{max-height:660px}
+.housing-stack-frame{overflow:hidden}
+.housing-stack{position:relative;max-width:940px;aspect-ratio:1692/1706;transform-origin:65% 46%}
+.housing-stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.housing-under{opacity:.3}
+.is-zoomed .housing-stack{transform:scale(1.3)}
+.housing-hierarchy-grid,.housing-section-pair{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(180px,1fr);gap:22px;align-items:start;margin-top:15px}
+.housing-section-pair{grid-template-columns:minmax(155px,1fr) minmax(0,2.2fr)}
+.housing-type-map{position:relative}
+.housing-type-map img{width:100%;height:auto;display:block}
+.housing-type-map [data-highlight]{position:absolute;inset:0}
+.housing-type-map [data-highlight] img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+.has-focus .housing-type-base{opacity:.4;filter:grayscale(1)}
+.housing-dot{display:inline-block;width:8px;height:8px;background:var(--street);border-radius:50%;margin-right:5px}
+.housing-type-copy p{font-size:12px;line-height:1.7;margin:0 0 10px}
+.housing-ratings{display:flex;gap:20px;font-size:11px;margin:0 0 10px}
+.housing-ratings dt{margin:0;color:var(--housing-muted)}
+.housing-ratings dd{margin:0;font-weight:500}
+.housing-boat-marker{position:absolute;top:33%;left:58%;width:6%;aspect-ratio:1;border:2px solid #5c6059;border-radius:50%;background:#fff4}
+@media(max-width:700px){
+.housing-page .housing-jumps{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:37px}
+.housing-jumps a{padding:11px 8px 11px 0}
+.housing-page .housing-chapter{padding-top:27px}
+.housing-section{padding-top:23px;margin-bottom:25px}
+.housing-pair{gap:10px}
+.housing-hierarchy-grid,.housing-section-pair{grid-template-columns:1fr;gap:12px}
+.housing-section-pair>figure{max-width:230px}
+.housing-type-copy figure{max-width:390px}
+.housing-tabs{column-gap:15px}
+.housing-page .housing-tabs button{min-height:34px}
+}
+@media(min-width:701px){.housing-stack{max-width:min(940px,max(550px,82svh))}}
+
+/* Strážna progresses through the five original massing diagrams. */
+.str-massing-figure{margin:20px 0 0!important}
+.housing-page .str-massing-figure img{display:block;width:100%;height:clamp(230px,39vw,500px);max-height:500px;object-fit:contain;object-position:left center}
+.str-massing-figure figcaption{font-size:12px!important;color:#343731!important}
+.str-stage-nav{display:flex;justify-content:space-between;margin-top:14px}
+.housing-page .str-stage-nav button{font-size:11px;min-height:36px;padding:5px 0}
+.str-stage-nav button:disabled{opacity:.4;cursor:default}
+.str-drawings{scroll-margin-top:24px}
+.str-drawing-types{margin-bottom:14px}
+.str-plan-scroll{overflow-x:auto;overscroll-behavior-x:contain}
+.str-plan{display:block;width:100%;height:auto;min-width:620px;max-height:790px}
+.str-drawing-hit{cursor:pointer;outline:none}
+.str-section-target{fill:none;stroke:transparent;stroke-width:36;pointer-events:stroke}
+.str-section-hover{fill:none;stroke:transparent;stroke-width:2;stroke-dasharray:5 4;vector-effect:non-scaling-stroke;pointer-events:none}
+.str-section-hit:is(:hover,:focus-visible) .str-section-hover{stroke:#45645f}
+.str-elevation-hit rect{fill:transparent;stroke:transparent}
+.str-elevation-hit:is(:hover,:focus-visible) rect{fill:#dbe9e580;stroke:#45645f;vector-effect:non-scaling-stroke}
+.str-elevation-hit path{fill:none;stroke:#305857;stroke-width:1.5;vector-effect:non-scaling-stroke;pointer-events:none}
+.str-elevation-hit text{fill:#305857;font:500 21px Montserrat,Arial,sans-serif;text-anchor:middle;pointer-events:none}
+.str-sheet img{display:block;width:100%;height:auto;max-height:700px;object-fit:contain;object-position:left top}
+.housing-page .str-return{font-size:11px;padding:8px 0;margin:0 0 8px;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:650px){
+ .str-massing .housing-tabs{gap:0 14px}
+ .str-massing .housing-tabs button{font-size:11px}
+ .housing-page .str-massing-figure img{height:auto;max-height:360px}
+}
+
+.str-section-label rect{fill:transparent;stroke:transparent}
+.str-section-label:is(:hover,:focus-visible) rect{fill:#dbe9e530;stroke:#45645f;vector-effect:non-scaling-stroke}
+
+/* The traffic key uses the original portfolio colours and line weights. */
+[data-gallery="concepts"] .housing-concept-layout.has-legend{display:grid;grid-template-columns:minmax(0,3fr) minmax(210px,1fr);gap:32px;align-items:start}
+.housing-concept-legend{padding-top:4px;font-size:11px;line-height:1.7;color:#6b6e66}
+.housing-concept-legend ul{list-style:none;padding:0;margin:0}
+.housing-concept-legend ul+ul{margin-top:16px}
+#detail.project-page .housing-concept-legend li{display:flex;align-items:center;gap:12px;margin:0 0 7px;font-size:11px;line-height:1.7}
+.housing-concept-legend .concept-swatch{display:block;flex:0 0 30px;height:14px;background:var(--legend-colour)}
+.housing-concept-legend .concept-line{display:block;flex:0 0 30px;height:var(--legend-width);background:var(--legend-colour)}
+@media(max-width:760px){
+ [data-gallery="concepts"] .housing-concept-layout.has-legend{grid-template-columns:1fr;gap:20px}
+ .housing-concept-legend{padding:0}
+ .housing-concept-legend ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}
+ #detail.project-page .housing-concept-legend li{margin:0;gap:8px}
+}
+
+/* Source-aligned floor layers and paired Gullbergsvass images. */
+#detail[data-project="gullbergsvass"] .housing-pair>figure{grid-column:auto}
+#detail[data-project="gullbergsvass"] .gull-render-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gull-render-pair img{aspect-ratio:16/9;object-fit:cover}
+.gull-water-study{display:grid;grid-template-columns:1fr;gap:28px}
+.gull-water-study>figure{grid-column:auto}
+.gull-water-study>figure:last-child{width:min(100%,800px)}
+.gull-floor-layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(210px,1fr);gap:32px;align-items:start;margin-top:20px}
+.gull-floor-layout .housing-stack{max-width:100%}
+.housing-floor .housing-site-underlay{opacity:.1}
+.housing-floor .housing-under{opacity:.2}
+.housing-floor .housing-under[hidden]{display:none}
+.gull-plan-legend{font-size:11px;line-height:1.7;color:#6b6e66;padding-top:4px}
+.gull-plan-legend ul{padding:0;margin:0;list-style:none}
+#detail.project-page .gull-plan-legend li{display:flex;align-items:center;gap:12px;font-size:11px;line-height:1.7;margin:0 0 10px}
+.gull-plan-swatch{flex:0 0 32px;height:16px;border:1px solid #ddd}
+.gull-plan-swatch.green-roof{background:radial-gradient(ellipse at center,#888 0 1px,transparent 1.4px) 0 0/7px 5px}
+.gull-plan-swatch.shared-roof{background:radial-gradient(#888 .6px,transparent .9px) 0 0/3px 3px}
+.gull-plan-swatch.balconies{background:repeating-linear-gradient(90deg,#71cebe 0 1px,white 1px 4px)}
+.housing-concept-legend .concept-arrow{position:relative;display:block;flex:0 0 30px;height:3px;background:var(--legend-colour)}
+.housing-concept-legend .concept-arrow:after{content:"";position:absolute;right:0;top:-4px;width:9px;height:9px;border-top:2px solid var(--legend-colour);border-right:2px solid var(--legend-colour);transform:rotate(45deg)}
+[data-gallery="axos"] .housing-drawing,[data-gallery="details"] .housing-drawing{margin-top:20px}
+.gull-detail-stack{position:relative;width:100%;max-width:900px;aspect-ratio:1692/1706}
+#detail[data-project="gullbergsvass"] [data-gallery="details"] .gull-detail-stack img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:fill}
+.gull-detail-site{opacity:.1}
+@media(max-width:760px){
+ .gull-floor-layout{grid-template-columns:1fr;gap:20px}
+ .gull-plan-legend ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 16px}
+ #detail.project-page .gull-plan-legend li{gap:8px;margin:0}
+}
+@media(max-width:650px){#detail[data-project="gullbergsvass"] .gull-render-pair{grid-template-columns:1fr}}
+
+/* One architectural drawing study: floor diagrams, detailed plans and cuts. */
+.gull-floor-view-controls{margin-bottom:18px}
+.gull-floor-toolbar{margin-bottom:20px}
+.gull-floor-actions{display:flex;align-items:baseline;flex-wrap:wrap;gap:20px}
+.housing-page .gull-return{font:400 12px/1.5 Montserrat,Arial,sans-serif;min-height:36px;padding:8px 0;text-decoration:underline;text-underline-offset:4px;color:#6b6e66}
+.gull-section-links{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.gull-section-link{cursor:pointer;pointer-events:auto;outline:none}
+.gull-cut-target{fill:none;stroke:transparent;stroke-width:36px;vector-effect:non-scaling-stroke;pointer-events:stroke}
+.gull-cut-line{fill:none;stroke:#435b56;stroke-width:1px;stroke-dasharray:7 5;vector-effect:non-scaling-stroke;pointer-events:none;opacity:.7}
+.gull-section-marker circle{fill:#fff;stroke:#435b56;stroke-width:1px;vector-effect:non-scaling-stroke}
+.gull-section-marker text{fill:#304d45;font:500 28px Montserrat,Arial,sans-serif;pointer-events:none}
+.gull-section-link:is(:hover,:focus-visible) .gull-cut-line{stroke-width:2px;opacity:1}
+.gull-section-link:is(:hover,:focus-visible) circle{fill:#e8f1ed;stroke-width:2px}
+.gull-building-section img{display:block;width:100%;height:auto;max-height:700px;object-fit:contain;object-position:left top}
+@media(max-width:650px){
+ .gull-floor-actions{gap:16px}
+ .gull-section-marker text{font-size:52px}
+ .gull-section-marker circle{r:42px}
+}
