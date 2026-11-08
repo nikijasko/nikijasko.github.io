@@ -1,0 +1,13 @@
+/* Identical controls for both construction viewers; geometry is unchanged. */
+body{font:12px/1.6 Montserrat,Arial,sans-serif;color:#333;background:#f6f6f3}
+.bar h2{font-size:14px;font-weight:500;line-height:1.6}
+button,#category-controls,.category,#members legend,.slice,.slice output{font-family:inherit;font-size:12px;line-height:1.5}
+button{min-height:34px;padding:7px 10px;border-radius:0}
+.hint,#status{font-size:11px;line-height:1.7}
+button:focus-visible,input:focus-visible{outline:2px solid #596652;outline-offset:3px}
+@media(max-width:700px){
+ #category-controls{font-size:12px;gap:8px 12px}
+ button{font-size:12px;padding:6px 9px}
+ .hint{font-size:11px}
+ #show-all{padding:6px 9px}
+}
