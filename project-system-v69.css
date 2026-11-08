@@ -1,0 +1,157 @@
+/* Shared project typography and controls. Project-specific geometry stays local. */
+#detail.project-page{
+ --project-title-size:30px;
+ --project-section-size:20px;
+ --project-subhead-size:16px;
+ --project-label-size:14px;
+ --project-body-size:13px;
+ --project-control-size:12px;
+ --project-small-size:11px;
+ --project-ink:#252525;
+ --project-muted:#6b6e66;
+ --project-rule:#e1e2dc;
+ --project-gap:32px;
+ --project-space:64px;
+ --thesis-gap:var(--project-gap);
+ --bridge-gap:var(--project-gap);
+ max-width:1264px!important;
+ font-family:Montserrat,Arial,sans-serif;
+ font-size:var(--project-body-size);
+ line-height:1.85;
+ color:var(--project-ink);
+}
+
+/* A shared title, type and original credit line on every project. */
+#detail.project-page .project-heading{
+ display:block!important;
+ column-gap:var(--project-gap);
+ row-gap:10px;
+ align-items:start;
+ margin:32px 0 22px!important;
+}
+#detail.project-page .project-heading h1{
+ grid-column:auto!important;
+ font-size:var(--project-title-size)!important;
+ font-weight:500!important;
+ line-height:1.25!important;
+ letter-spacing:-.015em!important;
+ max-width:none;
+ margin:0!important;
+}
+#detail.project-page .project-metadata{
+ display:block;
+ max-width:none;
+ margin:0 0 32px;
+ padding:0;
+ color:var(--project-muted);
+}
+#detail.project-page .project-metadata p{
+ font-size:var(--project-small-size)!important;
+ line-height:1.8!important;
+ font-weight:400;
+ color:inherit;
+ margin:0;
+}
+#detail.project-page .project-metadata p+p{margin-top:4px}
+
+/* The same type roles throughout the narrative and drawing sections. */
+#detail.project-page :is(h2,h3){font-size:var(--project-section-size)!important;font-weight:500!important;line-height:1.45!important;letter-spacing:0!important}
+#detail.project-page :is(h4,h5){font-size:var(--project-label-size)!important;font-weight:500!important;line-height:1.6!important;letter-spacing:0!important}
+#detail.project-page :is(p,li,dd){font-size:var(--project-body-size);line-height:1.85}
+#detail.project-page p{font-size:var(--project-body-size)!important;line-height:1.85!important;color:var(--project-ink)}
+#detail.project-page :is(.intro,.housing-intro,.bridge-intro){font-size:var(--project-body-size)!important;line-height:1.85!important}
+#detail.project-page :is(.thesis-theory h3,.case-explanation h3){font-size:var(--project-subhead-size)!important;line-height:1.6!important}
+#detail.project-page :is(.case-heading h3,.viikki-map-panel h4,.bridge-site-info h3,.housing-type-copy h4,.network-copy h4,.masterplan-details h5){font-size:var(--project-label-size)!important;line-height:1.6!important}
+#detail.project-page .thesis-question{font-size:var(--project-subhead-size)!important;line-height:1.7!important}
+#detail.project-page .thesis-epigraph blockquote p{font-size:clamp(24px,2.35vw,30px)!important;line-height:1.4!important}
+
+/* Captions, guides, sources and small labels use one readable size. */
+#detail.project-page figcaption,
+#detail.project-page figcaption :is(p,span,strong),
+#detail.project-page :is(
+ .housing-note,.housing-kicker,.housing-index,.housing-ratings,
+ .school-plan-note,.viikki-part,.viikki-render-note,.viikki-plan-guide,.viikki-model-note,
+ .bridge-overview-copy,.bridge-lead>p,.bridge-map-credit,.bridge-drawing-caption,
+ .bridge-analysis-controls>p,.bridge-detail-key,.bridge-detail-key dt,.bridge-detail-key dd,
+ .case-heading p,.case-map-notes,.network-source,.network-map-footer,.network-legend,
+ .masterplan-map-note,.masterplan-source,.masterplan-zone-code,.masterplan-block-note,
+ .thesis-pair-hint,.thesis-step-copy,.thesis-step-number
+ ){
+ font-size:var(--project-small-size)!important;
+ line-height:1.7!important;
+ color:var(--project-muted)!important;
+}
+#detail.project-page figcaption{margin-top:10px!important}
+#detail.project-page figcaption strong{font-weight:500}
+#detail.project-page .bridge-detail-key dt{margin:0}
+#detail.project-page .network-legend li{font-size:var(--project-small-size);line-height:1.7}
+
+/* Shared drawing selectors: same text, underline, spacing and keyboard focus. */
+#detail.project-page :is(.housing-tabs,.viikki-options,.bridge-tabs,.network-tabs,.school-plan-toolbar [role=tablist]){column-gap:20px}
+#detail.project-page .viikki-stage-heading .viikki-options{column-gap:6px}
+#detail.project-page :is(.housing-tabs button,.viikki-options button,.bridge-tabs button,.network-tabs button,.case-tabs button,.school-plan-toolbar [role=tablist] button){
+ appearance:none;
+ font-family:inherit;
+ font-size:var(--project-control-size)!important;
+ font-weight:400;
+ line-height:1.5!important;
+ color:var(--project-muted);
+ background:transparent;
+ border:0;
+ border-bottom:1px solid transparent;
+ border-radius:0;
+ padding:8px 0!important;
+ min-height:36px;
+ text-align:left;
+ text-decoration:none!important;
+ cursor:pointer;
+}
+#detail.project-page :is(.housing-tabs button,.viikki-options button,.bridge-tabs button,.network-tabs button,.case-tabs button,.school-plan-toolbar [role=tablist] button):is([aria-pressed=true],[aria-selected=true],:hover){color:var(--project-ink);border-bottom-color:currentColor;text-decoration:none!important}
+#detail.project-page :is(button,a,[role=button]):focus-visible{outline:2px solid #596652;outline-offset:4px}
+#detail.project-page button:disabled{opacity:.4;cursor:default}
+#detail.project-page :is(.housing-enlarge,.viikki-sheet figcaption a,.viikki-detail-link,.viikki-return,.str-return,.str-stage-nav button,.viikki-stage-nav button,.school-enlarge,.bridge-enlarge,.bridge-view-link,.case-context,.case-dialog a,.network-map-footer a,.network-retry,.network-to-plan,.masterplan-toolbar button,.masterplan-back,.school-plan-dialog button,.bridge-lightbox-tools button,.case-dialog-bar button){
+ font-family:inherit;
+ font-size:var(--project-control-size)!important;
+ font-weight:400;
+ line-height:1.5!important;
+ color:var(--project-muted);
+ min-height:36px;
+}
+#detail.project-page :is(.housing-controls,.school-plan-toolbar,.bridge-toolbar){flex-wrap:wrap;gap:6px 20px}
+#detail.project-page :is(.housing-enlarge,.bridge-enlarge,.viikki-sheet figcaption a,.school-enlarge,.viikki-detail-link,.bridge-view-link){text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+#detail.project-page :is(.case-dialog-bar button,.school-enlarge){background:none;border:0;border-bottom:1px solid transparent;border-radius:0;padding:8px 0}
+#detail.project-page :is(.housing-jumps a,.viikki-chapter-links a,.bridge-contents a,.thesis-step-title,.back,.next a){font-size:var(--project-control-size)!important;line-height:1.6!important}
+#detail.project-page :is(.housing-jumps a,.viikki-chapter-links a,.bridge-contents a,.thesis-step-title){font-weight:500}
+#detail.project-page :is(.thesis-download a,.viikki-model-jump,.viikki-model-note a,.bridge-lightbox-original){font-size:var(--project-control-size)!important;line-height:1.5!important}
+#detail.project-page :is(.housing-jumps small,.viikki-chapter-links span){font-size:var(--project-small-size)!important;line-height:1.7!important}
+#detail.project-page .thesis-step-heading{min-height:36px}
+
+/* Shared image gutters, section rhythm, model frames and modal treatment. */
+#detail.project-page :is(.gallery-row,.school-render-grid,.school-detail-grid,.housing-pair,.viikki-render-grid,.viikki-design-process,.thesis-pair,.thesis-exhibition-layout,.bridge-overview,.bridge-locations){gap:var(--project-gap)}
+#detail.project-page :is(.school-section,.viikki-chapter){margin-block:var(--project-space)}
+#detail.project-page .housing-section{padding-top:0;margin-block:var(--project-space)}
+#detail.project-page .bridge-section{margin-bottom:var(--project-space)}
+#detail.project-page .viikki-study{margin-top:40px}
+#detail.project-page :is(.bridge-columns,.bridge-proposal-column){row-gap:40px}
+#detail.project-page :is(.school-model,.viikki-model){height:650px;border:1px solid var(--project-rule)}
+#detail.project-page :is(.bridge-lightbox,.case-dialog,.school-plan-dialog){font-family:inherit;color:var(--project-ink);border:1px solid var(--project-rule);border-radius:0;box-shadow:0 12px 45px #0002}
+#detail.project-page :is(.bridge-lightbox,.case-dialog,.school-plan-dialog)::backdrop{background:rgba(32,35,30,.42)}
+#detail.project-page :is(.bridge-lightbox-bar p,.case-dialog-bar h3){font-size:var(--project-label-size)!important;line-height:1.6!important;font-weight:500!important}
+
+/* One shared row heading when the footbridge proposals sit side by side.
+   Keep its space so the corresponding drawings retain their common datum. */
+@media(min-width:761px){
+ #detail.project-page .bridge-proposal-column+.bridge-proposal-column .bridge-column-block>h3{visibility:hidden}
+}
+
+@media(max-width:760px){
+ #detail.project-page .project-heading{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:650px){
+ #detail.project-page{--project-title-size:26px;--project-gap:20px;--project-space:48px}
+ #detail.project-page .project-heading{margin-top:28px!important;margin-bottom:20px!important}
+ #detail.project-page .project-metadata{margin-bottom:28px}
+ #detail.project-page :is(.school-model,.viikki-model){height:640px}
+ #detail.project-page .school-plan-toolbar [role=tablist]{flex-wrap:wrap}
+ #detail.project-page .case-dialog{padding:16px}
+}
