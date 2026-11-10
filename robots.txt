@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nikijasko.github.io/sitemap.xml
