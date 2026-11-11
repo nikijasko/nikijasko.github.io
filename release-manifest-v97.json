@@ -697,9 +697,9 @@
       "sha256": "71f5f42c4f6c8b7c09f8741215bcaed6245a81df59804ec7e66b099cb5ce68c6"
     },
     "construction-viewer-v18.html": {
-      "bytes": 4129,
-      "gitBlob": "c5ceb2098c95a7bc7cae68edb08fc362149cd60c",
-      "sha256": "b490f5f6f45d9e407e982cf4cbe18260959c9feb004720b62446add566b0de34"
+      "bytes": 4173,
+      "gitBlob": "8f05c34daef6ffab3f4f7f89530edd928a7e7876",
+      "sha256": "1eda6c4e691789588f8306d95161ed392ae04319975ee5c869fd7faabe130b42"
     },
     "construction-viewer-v18.js": {
       "bytes": 9927,
@@ -4557,9 +4557,9 @@
       "sha256": "bc71df9ae7212a00f4a1a6363d33c376b1a43dd9a8f22ceb84fff4f3420ec801"
     },
     "project-router-v97.js": {
-      "bytes": 8170,
-      "gitBlob": "796ba097f3b6530a73c3fcfad3a996410e97c597",
-      "sha256": "40da89471408d6553a492d66d63efd87c5796b78ea15662641b2bca1ccd76053"
+      "bytes": 8228,
+      "gitBlob": "147f248bed4c66120422c005412976591ae02be5",
+      "sha256": "2726cd53e23be11f582106281a787941643ebd75cd2e605c22367c9a4d494634"
     },
     "project-system-v69.css": {
       "bytes": 9229,
@@ -5887,9 +5887,9 @@
       "sha256": "d1c21f1a4ba74124c3cdca5c3c681711916b4ee7485966db386a130d8bd81b62"
     },
     "viikki-viewer-v4.html": {
-      "bytes": 4144,
-      "gitBlob": "f951d28baa9a5207b1b653e60689cc05bc1251a7",
-      "sha256": "16fa9ac0bb0fffed2d97bcecda4d30603cd0a1c0c71add18a500855aff8d95b2"
+      "bytes": 4189,
+      "gitBlob": "7d3d6ca18e6ee4cd469e96485625a181b99aaf46",
+      "sha256": "b0e50cd1ce51c6411009e01262d8cdf772f58ced97989a7ddf398fa25ecba3e3"
     },
     "viikki-viewer-v4.js": {
       "bytes": 9400,
@@ -6097,9 +6097,9 @@
       "sha256": "95e2e72b7880dda6000447900a8495294358341a86277ffb4a382a4e7943771c"
     },
     "viikki.html": {
-      "bytes": 25508,
-      "gitBlob": "3694dfddc87297a417d237a1de8d804cfb581eb8",
-      "sha256": "be7ee104530eccbb8023ec46dc03cccc430d1c9a6f2498dc718267c5d9265603"
+      "bytes": 25509,
+      "gitBlob": "e914ea39a305b1a0a855a0bb481e093e732fbd6a",
+      "sha256": "4afb9fcdf05cbb2036e07e26352b926252f74118aeada29b80be492f9966f6cb"
     },
     "viikki.jpg": {
       "bytes": 370897,

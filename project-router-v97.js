@@ -88,7 +88,7 @@
    if(intro.children.length===1)intro.classList.add('intro-without-credits');
   });
   detail.querySelectorAll('.viikki-model-note a').forEach(link=>{
-   const source=new URL(link.getAttribute('href'),location.href);source.searchParams.set('v','97');link.href=source.href;
+   const source=new URL(link.getAttribute('href').replace('viikki-viewer-v4.html','viikki-viewer-v97.html'),location.href);source.searchParams.set('v','97');link.href=source.href;
   });
   detail.querySelectorAll('iframe.school-model,iframe.viikki-model').forEach(frame=>{
    const source=new URL(frame.getAttribute('src').replace('construction-viewer-v18.html','construction-viewer-v97.html').replace('viikki-viewer-v4.html','viikki-viewer-v97.html'),location.href);source.searchParams.set('v','97');frame.src=source.href;
